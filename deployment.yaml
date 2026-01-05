@@ -20,7 +20,8 @@ spec:
         - name: raghu-container
           # Harness will replace this with the artifact image from CI.
           # deployment.yaml
-          image: nagasaivardhan/app:green
+          #image: nagasaivardhan/app:green
+          image: {{.values.image}}
           ports:
             - containerPort: 80
 ---

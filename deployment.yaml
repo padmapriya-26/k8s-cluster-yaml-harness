@@ -21,7 +21,7 @@ spec:
           # Harness will replace this with the artifact image from CI.
           # deployment.yaml
           #image: nagasaivardhan/app:green
-          image: {{.values.image}}
+          image: {{.Values.image}}
           ports:
             - containerPort: 80
 ---

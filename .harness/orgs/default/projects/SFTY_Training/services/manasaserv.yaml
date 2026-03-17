@@ -1,0 +1,5 @@
+service:
+  name: manasa-serv
+  identifier: manasaserv
+  orgIdentifier: default
+  projectIdentifier: SFTY_Training

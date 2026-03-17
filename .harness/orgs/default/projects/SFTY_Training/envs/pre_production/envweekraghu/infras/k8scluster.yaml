@@ -1,0 +1,13 @@
+infrastructureDefinition:
+  name: k8s-cluster
+  identifier: k8scluster
+  orgIdentifier: default
+  projectIdentifier: SFTY_Training
+  environmentRef: envweekraghu
+  deploymentType: Kubernetes
+  type: KubernetesDirect
+  spec:
+    connectorRef: k8sconnec
+    namespace: default
+    releaseName: release-<+INFRA_KEY_SHORT_ID>
+  allowSimultaneousDeployments: false

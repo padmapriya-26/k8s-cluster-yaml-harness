@@ -20,8 +20,8 @@ spec:
         - name: raghu-container
           # Harness will replace this with the artifact image from CI.
           # deployment.yaml
-          #image: nagasaivardhan/app:green
-          image: {{.Values.image}}    #thisis for canary deployment to use 
+          image: nginx:v1
+          #image: {{.Values.image}}    #thisis for canary deployment to use 
           ports:
             - containerPort: 80
 ---
